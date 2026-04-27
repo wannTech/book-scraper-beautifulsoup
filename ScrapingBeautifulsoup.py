@@ -25,7 +25,7 @@ while url:
                 "rating": rating
             })
 
-    # Cek ada halaman berikutnya nggak
+    # Cek ada halaman berikutnya atau nggak
     next_btn = soup.find("li", class_="next")
     if next_btn:
         next_page = next_btn.find("a")["href"]
@@ -35,8 +35,6 @@ while url:
 
 # Simpan ke CSV
 import openpyxl
-
-# Ganti bagian "Simpan ke CSV" dengan ini:
 wb = openpyxl.Workbook()
 ws = wb.active
 ws.title = "Books"
