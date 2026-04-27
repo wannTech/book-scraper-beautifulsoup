@@ -54,4 +54,3 @@ for col in ws.columns:
 wb.save("books_all.xlsx")
 print(f"Selesai! {len(books)} buku disimpan ke books_all.xlsx")
 
-print(f"Selesai! {len(books)} buku ditemukan.")
